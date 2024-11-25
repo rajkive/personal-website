@@ -1,6 +1,6 @@
-const mainData = `
+let mainData = `
     <header>
-      <img src="#" alt="logo">
+     
       <nav>
         <ul class="nav-options">
             <li><a id="exp"">Experience</a></li>
@@ -27,9 +27,51 @@ const mainData = `
     <img src="/images/my-image.jpg" alt="my image" class="my-image">
     </main>
 
-    <div class="section" id="section1">
-        <h1>This is my experience tab</h1>
+  <section id="section1" class="section">
+  <h2>Work Experiences</h2>
+  <div class="timeline">
+    <!-- Timeline Item 1 -->
+    <div class="timeline-item">
+      <div class="timeline-date">September 2023 - Present</div>
+      <div class="timeline-content">
+        <h3>Student Consultant</h3>
+        <p>UMass IT, Amherst, MA</p>
+        <p>Provided hands-on technical support to faculty and students, ensuring smooth IT infrastructure operation.</p>
+      </div>
     </div>
+
+    <!-- Timeline Item 2 -->
+    <div class="timeline-item">
+      <div class="timeline-date">August 2024 - Current</div>
+      <div class="timeline-content">
+        <h3>Resident Assistant</h3>
+        <p>UMass Amherst, MA</p>
+        <p>Organize community building and student learning initiatives, adeptly implementing Residential Curriculum programs.</p>
+      </div>
+    </div>
+
+    <!-- Timeline Item 3 -->
+    <div class="timeline-item">
+      <div class="timeline-date">August 2021 - September 2021</div>
+      <div class="timeline-content">
+        <h3>Full Stack Intern</h3>
+        <p>Serverdial Techserv, Odisha, India</p>
+        <p>Developed e-commerce portals using WordPress, PHP, and MySQL.</p>
+      </div>
+    </div>
+
+    <!-- Timeline Item 4 -->
+    <div class="timeline-item">
+      <div class="timeline-date">November 2020 - May 2022</div>
+      <div class="timeline-content">
+        <h3>Design Manager</h3>
+        <p>Youthika, Amherst, MA</p>
+        <p>Developed front-end features for a language learning web app, including flashcards and AI-driven translations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
     <div class="section" id="section2">
         <h1>This is my skills tab</h1>
     </div>
