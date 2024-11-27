@@ -45,7 +45,7 @@ header{
 .nav-options li a{
     font-weight: 600;
     font-size: 17px;
-    color: black;
+    color: #293241;
     cursor: pointer;
 }
 .nav-options li a:hover{
@@ -190,19 +190,95 @@ header{
 }
 
 #section2{
-    width: 180vh;            /* Set the box width */
-    height: 90vh;            /* Adjust height to fit content */
-    padding: 20px;           /* Add spacing inside the box */
-    margin: 50px auto;    
-    border-radius: 1%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #EFFAFD;
+    margin: 30px; /* Combined shorthand for top, bottom, left, and right margins */
+    border-radius: 8px;
+    padding: 90px; /* Space inside the container */
+    gap: 60px; /* Space between header and images */
+    text-align: center;
+}
+.skill-images-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-content: center; 
+    gap: 40px; 
+    width: 100%;
+}
+.skill-images{
+    width: 180px;
+    height: 180px; 
+    padding: 50px;
+    border: 1px solid #333;
+    border-radius: 2px;
 }
 
-#section3{
 
-    width: 180vh;            /* Set the box width */
-    height: 90vh;            /* Adjust height to fit content */
-    padding: 20px;           /* Add spacing inside the box */
-    margin: 50px auto;  
+
+
+#section3 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #EFFAFD;
+    margin: 30px;
+    border-radius: 8px;
+    padding: 20px; /* Adjusted padding */
+    gap: 0px; /* No additional gap between elements */
+    text-align: center;
+    align-items: center;
+}
+#section3 h2 {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-size: 2rem; /* Adjust font size if needed */
+}
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between project items */
+    justify-content: center;
+    margin: 0; /* Remove default margin */
+    padding-top: 10px; /* Fine-tune space below the heading */
+}
+.project-item {
+    display: flex;
+    flex-direction: column; /* Stack image and content */
+    align-items: center; /* Center content horizontally */
+    padding: 10px;
+    border: 1px solid #4A8BDF;
+    border-radius: 5px;
+    width: 400px; /* Fixed width for consistent sizing */
+    background-color: #fff; /* White background for the polaroid effect */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+
+}
+.project-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc; /* Add a border below the image */
+    border-radius: 5px 5px 0 0; /* Rounded corners only at the top */
+    object-fit: cover; /* image fits nicely */
+}
+.content {
+    padding: 15px;
+    text-align: left; 
+}
+.content h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.content p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
 }
 
 #section4{

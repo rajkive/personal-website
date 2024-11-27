@@ -72,12 +72,68 @@ let mainData = `
   </div>
 </section>
 
-    <div class="section" id="section2">
-        <h1>This is my skills tab</h1>
+    <section id="section2" class="section">
+      <h2>Languages and Tools</h2>
+      <div class="skill-images-container">
+      <img src="/images/skills-tab/html-icon.png" class="skill-images">
+      <img src="/images/skills-tab/css.png" class="skill-images">
+      <img src="/images/skills-tab/js.png" class="skill-images">
+      <img src="/images/skills-tab/c.png" class="skill-images">
+      <img src="/images/skills-tab/java.png" class="skill-images">
+      <img src="/images/skills-tab/git-logo.png" class="skill-images">
+      <img src="/images/skills-tab/linux.png" class="skill-images">
+      <img src="/images/skills-tab/nmap.png" class="skill-images">
+      <img src="/images/skills-tab/adobe-lightroom.png" class="skill-images">
+      <img src="/images/skills-tab/salesforce.png" class="skill-images">
+      </div>
+    </section>
+
+    <section id="section3" class="section">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <!-- project 1 -->
+      <div class="project-item">
+      <img src="/images/projects-tab/1.png" alt="Personal Website" class="project-image">
+      <div class="content">
+        <h3>Language Study App</h3>
+        <p>
+        I'm currently working in a team where we are developing a language learning web app.
+        A key component that I am working on is an AI-driven translation feature that allows users to translate the entire app into their preferred language. 
+        I'm also focusing on creating a responsive landing page UI.
+        </p>
+      </div>
+      </div>
+
+      <!-- project 2 -->
+      <div class="project-item">
+      <img src="/images/projects-tab/2.png" alt="Personal Website" class="project-image">
+      <div class="content">
+        <h3>Personal Website</h3>
+        <p>
+        My portfolio is a sleek, single-page website showcasing my experience and projects. 
+        The intuitive navigation bar provides quick access to sections like Experience, Skills, Projects, and a Contact form. 
+        For a comprehensive overview of my professional journey, visitors can download my resume directly from the site.
+        </p>
+      </div>
+      </div>
+
+      <!-- project 3 -->
+      <div class="project-item">
+      <img src="/images/projects-tab/3.png" alt="Personal Website" class="project-image">
+      <div class="content">
+        <h3>DNA Profiler</h3>
+        <p>
+        I implemented a DNA sequence identification program that analyzes a given DNA sequence and determines its origin based on functional decomposition. 
+        I leveraged Python's csv and sys modules to process data and handle system arguments. By effectively converting between different data types and applying 
+        efficient algorithms, I optimized the accuracy of the DNA sequence identification process. 
+        </p>
+      </div>
+      </div>
+    
     </div>
-    <div class="section" id="section3">
-        <h1>This is my projects tab</h1>
-    </div>
+    </section>
+
+
     <div class="section" id="section4">
         <h1>This is my contact tab</h1>
     </div>
