@@ -12,7 +12,7 @@ let mainData = `
     </header> 
 
     <main class="introduction">
-    <div class="intro-container">
+    <div  class="intro-container">
     <div class="text-content">
         <h1 class="heading">Hello — </h1>
         <p class="intro-text">I am Rajshree Mehetre a Computer Science major with a Business minor at the University of Massachusetts Amherst. I am passionate about <span class="highlight">cybersecurity</span>, <span class="highlight">solving problems</span>, cameras and <span class="highlight">everything tech</span>.
@@ -24,10 +24,10 @@ let mainData = `
             </div>
     </div>
     </div>
-    <img src="/images/my-image.jpg" alt="my image" class="my-image">
+    <img   src="/images/my-image.jpg" alt="my image" class="my-image">
     </main>
 
-  <section id="section1" class="section">
+  <section  id="section1" class="section">
   <h2>Work Experiences</h2>
   <div class="timeline">
     <!-- Timeline Item 1 -->
@@ -72,7 +72,7 @@ let mainData = `
   </div>
 </section>
 
-    <section id="section2" class="section">
+    <section  id="section2" class="section">
       <h2>Languages and Tools</h2>
       <div class="skill-images-container">
       <img src="/images/skills-tab/html-icon.png" class="skill-images">
@@ -88,9 +88,9 @@ let mainData = `
       </div>
     </section>
 
-    <section id="section3" class="section">
+    <section   id="section3" class="section">
     <h2>Projects</h2>
-    <div class="projects-container">
+    <div  class="projects-container">
       <!-- project 1 -->
       <div class="project-item">
       <img src="/images/projects-tab/1.png" alt="Personal Website" class="project-image">
@@ -134,12 +134,19 @@ let mainData = `
     </section>
 
 
-    <div class="section" id="section4">
-        <h1>This is my contact tab</h1>
-    </div>
+    <section id="section4" class="section">
+    <h2>Get in touch</h2>
+    <div class="social-links">
+                <button id="contact-button">email</button>
+                <img src="/images/linkedin.png" alt="LinkedIn" class="social-icon">
+                <img src="/images/git.png" alt="GitHub" class="social-icon">
+                <img src="/images/insta.png" alt="Instagram" class="social-icon">
+            </div>
+    </section>
 
     <footer>
-        <p>Made by Rajshree with lots of coffee and love</p>
+        <p>Made by Rajshree with love and lots of coffee</p>
     </footer>
+
 `
 document.getElementById('content').innerHTML = mainData;
