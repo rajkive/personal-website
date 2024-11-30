@@ -4,8 +4,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
-
 }
 
 li, a, footer, .section, .introduction{
@@ -33,10 +31,11 @@ header{
     list-style: none;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px; 
 }
 
-.nav-options li{
+.nav-options li #download-button{
     display: inline-block;
     position: relative;
     padding: 0px 20px;
@@ -47,10 +46,30 @@ header{
     font-size: 17px;
     color: 	#061932;
     cursor: pointer;
+    text-decoration: none;
 }
 .nav-options li a:hover{
     color: #4A8BDF;
 }
+#download-button{
+    padding: 0px 20px;
+    height: 40px;
+    font-weight: 600;
+    width: 150px;
+    cursor: pointer;
+    font-size: 17px;
+    background-color: #061932;
+    color: white;
+    border: #061932;
+    border-radius: 3px;
+    opacity: 0.9;
+    margin: 0;
+}
+#download-button:hover {
+    background-color: #4A8BDF;
+    color: white;
+}
+
 .introduction {
     height: calc(100vh - 70px); /* Subtract header height to fill the rest */
     display: flex;
@@ -331,8 +350,6 @@ header{
 #contact-button:hover{
     opacity: 1;
 }
-
-
 
 footer {
     display: flex; 

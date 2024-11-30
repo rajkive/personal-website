@@ -3,10 +3,13 @@ let mainData = `
      
       <nav>
         <ul class="nav-options">
-            <li><a id="exp"">Experience</a></li>
-            <li><a id="skill">Skills</a></li>
-            <li><a id="project">Projects</a></li>
-            <li><a id="contact">Contact Me</a></li>
+            <li><a id="exp"" href="#section1">Experience</a></li>
+            <li><a id="skill" href="#section2">Skills</a></li>
+            <li><a id="project" href="#section3">Projects</a></li>
+            <li><a id="contact" href="#section4">Contact Me</a></li>
+            <a href="/mehetre-rajshree-umass.pdf" download="Rajshree_Mehetre_CV.pdf">
+            <button id="download-button">Resume📄</button>
+            </a>
       </ul>
       </nav>
     </header> 
@@ -18,9 +21,9 @@ let mainData = `
         <p class="intro-text">I am Rajshree Mehetre a Computer Science major with a Business minor at the University of Massachusetts Amherst. I am passionate about <span class="highlight">cybersecurity</span>, <span class="highlight">solving problems</span>, cameras and <span class="highlight">everything tech</span>.
     </p>
     <div class="social-links">
-                <img src="/images/linkedin.png" alt="LinkedIn" class="social-icon">
-                <img src="/images/git.png" alt="GitHub" class="social-icon">
-                <img src="/images/insta.png" alt="Instagram" class="social-icon">
+                <img src="/images/linkedin.png" alt="LinkedIn" class="social-icon" data-url="https://www.linkedin.com/in/rajshree-mehetre/">
+                <img src="/images/git.png" alt="GitHub" class="social-icon" data-url="https://github.com/rajkive">
+                <img src="/images/insta.png" alt="Instagram" class="social-icon" data-url="https://www.instagram.com/rajs.relics">
             </div>
     </div>
     </div>
@@ -137,10 +140,10 @@ let mainData = `
     <section id="section4" class="section">
     <h2>Get in touch</h2>
     <div class="social-links">
-                <button id="contact-button">email</button>
-                <img src="/images/linkedin.png" alt="LinkedIn" class="social-icon">
-                <img src="/images/git.png" alt="GitHub" class="social-icon">
-                <img src="/images/insta.png" alt="Instagram" class="social-icon">
+                <button id="contact-button" data-url="mailto:rmehetre@umass.edu">email</button>
+                <img src="/images/linkedin.png" alt="LinkedIn" class="social-icon" data-url="https://www.linkedin.com/in/rajshree-mehetre/">
+                <img src="/images/git.png" alt="GitHub" class="social-icon" data-url="https://github.com/rajkive">
+                <img src="/images/insta.png" alt="Instagram" class="social-icon" data-url="https://www.instagram.com/rajs.relics">
             </div>
     </section>
 
@@ -150,3 +153,49 @@ let mainData = `
 
 `
 document.getElementById('content').innerHTML = mainData;
+
+document.querySelectorAll('.social-icon').forEach(image => {
+  image.addEventListener('click', function () {
+      const url = this.getAttribute('data-url');
+      if (url) {
+          window.open(url, '_blank');
+      }
+  });
+});
+
+document.querySelectorAll('.social-links').forEach(image => {
+  image.addEventListener('click', function () {
+      const url = this.getAttribute('data-url');
+      if (url) {
+          window.open(url, '_blank');
+      }
+  });
+});
+
+//email
+document.querySelectorAll('button[data-url]').forEach(button => {
+  button.addEventListener('click', function () {
+      const url = this.getAttribute('data-url');
+      if (url) {
+          window.open(url, '_blank');
+      }
+  });
+});
+
+//resume
+
+
+
+//smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+            });
+        }
+    });
+});
